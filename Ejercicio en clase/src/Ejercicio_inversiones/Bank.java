@@ -85,8 +85,11 @@ public class Bank {
     }
     public Cliente getMaxProfit(){
         Cliente MasBeneficiado=null;
+        double total=0;
         for (Cliente cliente : this.clientes.values()) {
-            for(Asset asset: this.cliente.)
+            for(Asset asset: cliente.getAsset()){
+                total+=asset.getProfit();
+            }
         }
     
     return MasBeneficiado;
