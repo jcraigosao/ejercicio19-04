@@ -11,7 +11,7 @@ public class Cliente {
     private String email;
     private ArrayList <Asset> asset;
 
-    public Cliente(String nombre, String apellido, int telefono, int edad, String email, ArrayList<Asset> asset) {
+    public Cliente(String nombre, String apellido, int telefono, int edad, String email) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.telefono = telefono;

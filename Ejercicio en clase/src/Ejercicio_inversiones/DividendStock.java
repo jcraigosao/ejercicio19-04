@@ -4,9 +4,11 @@ package Ejercicio_inversiones;
 public class DividendStock extends Stock {
     private double dividents;
 
-    public DividendStock(String symbol, double totalCost, double currentPrice) {
-        super(symbol, totalCost, currentPrice);
+    public DividendStock(double dividents, int totalShares, String symbol, double totalCost, double currentPrice) {
+        super(totalShares, symbol, totalCost, currentPrice);
+        this.dividents = dividents;
     }
+
     
     @Override
     public double getMarketValue(){

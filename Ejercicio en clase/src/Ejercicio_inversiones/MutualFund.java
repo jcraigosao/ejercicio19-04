@@ -3,9 +3,12 @@ package Ejercicio_inversiones;
 public class MutualFund extends ShareAsset {
 protected double totalShares;    
 
-    public MutualFund(String symbol, double totalCost, double currentPrice) {
+    public MutualFund(double totalShares, String symbol, double totalCost, double currentPrice) {
         super(symbol, totalCost, currentPrice);
+        this.totalShares = totalShares;
     }
+
+    
 
     public double getTotalShares() {
         return totalShares;
