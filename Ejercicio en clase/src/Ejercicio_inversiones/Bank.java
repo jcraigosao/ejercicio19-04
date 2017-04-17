@@ -91,6 +91,8 @@ public class Bank {
                 total+=asset.getProfit();
             }
         }
+        double max=0;
+        
     
     return MasBeneficiado;
     }
